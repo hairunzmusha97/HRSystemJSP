@@ -11,7 +11,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
-        <title>人力资源管理系统-培训管理</title>
+        <title>Human resource management system-Training management</title>
         <meta name="pragma" content="no-cache">
         <meta name="cache-control" content="no-cache">
 
@@ -30,10 +30,10 @@
                 <table class="header">
                     <tr>
                         <td>
-                            当前位置：企业管理&gt;&gt;培训管理
+                            Current position：Business management &gt;&gt; Training management
                         </td>
                         <TD align="right">
-                            <A HREF="train.do?method=add">新增培训公告</A>
+                            <A HREF="train.do?method=add">New training announcements</A>
                         </TD>
                     </tr>
                 </table>
@@ -46,7 +46,7 @@
 
                 <CENTER>
                     <div>
-                        <strong><font color="#990000">培训信息</font> </strong>
+                        <strong><font color="#990000">Training Information</font> </strong>
                     </div>
                     <%
                         int count = 0;
@@ -56,28 +56,28 @@
                            bordercolordark="#FFFFFF">
                         <TR class="tableheader">
                             <td>
-                                编号
+                                Numbering
                             </td>
                             <TD>
-                                培训标题
+                                Training title
                             </TD>
                             <TD>
-                                培训开始时间
+                                Training start time
                             </TD>
                             <td>
-                                培训结束时间
+                                Training end time
                             </td>
                             <td>
-                                培训部门
+                                Training department
                             </td>
                             <td>
-                                培训发布人
+                                Training publisher
                             </td>
                             <TD>
-                                培训人数
+                                Training number
                             </TD>
                             <TD>
-                                操作
+                                Operating
                             </TD>
                         </TR>
 
@@ -103,9 +103,9 @@
                                     ${hash.member}
                                 </TD>
                                 <TD>
-                                    <a href="train.do?method=info&id=${hash.id}">查看详细信息</a>
-                                    <a href="train.do?method=edit&id=${hash.id}">修改</a>
-                                    <a href="train.do?method=delete&id=${hash.id}">删除</a>
+                                    <a href="train.do?method=info&id=${hash.id}">Check the detail information</a>
+                                    <a href="train.do?method=edit&id=${hash.id}">Modify</a>
+                                    <a href="train.do?method=delete&id=${hash.id}">delete</a>
                                 </TD>
                             </TR>
                         </c:forEach>

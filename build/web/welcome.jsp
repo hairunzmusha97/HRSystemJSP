@@ -6,7 +6,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>人力资源管理系统-首页</title>
+        <title>Human resource management system-Home</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <%
             int ischeck = (Integer) session.getAttribute("ischeck");
@@ -20,10 +20,10 @@
                 var hour = date.getHours();
                 var ischeck =<%=ischeck%>;
                 if (ischeck == 1) {
-                    alert("您今天已经签到，不能重复签到！");
+                    alert("You have checked in today，Cannot sign in repeatedly！");
                     return false;
                 } else if (hour > "9") {
-                    alert("您已迟到！");
+                    alert("You are late！");
                 }
                 return true;
             }
@@ -33,10 +33,10 @@
                 var hour = date.getHours();
                 var isleave =<%=isleave%>;
                 if (isleave == 1) {
-                    alert("您今天已经签离，不能重复签离！");
+                    alert("You have checked out today，Cannot be checked out repeatedly！");
                     return false;
                 } else if (hour < "17") {
-                    confirm("现在尚未下班，您确定要签离？");
+                    confirm("Not yet off work，Are you sure you want to check out？");
                 }
                 return true;
             }
@@ -72,7 +72,7 @@
                 <table class="header">
                     <tr>
                         <td>
-                            当前位置：首页
+                            Current position：Home
                         </td>
                     </tr>
                 </table>
@@ -84,7 +84,7 @@
                 </p>
 
                 <p class="welcome">
-                    欢迎使用人力资源管理系统!
+                    Welcome to Human Resource Management System!
                 </p>
 
                 <p>
@@ -93,9 +93,9 @@
                 <div id="time" align="center">
                     <script>
                         document.getElementById('time').innerHTML = new Date().toLocaleString()
-                                + ' 星期' + '日一二三四五六'.charAt(new Date().getDay());
+                                + ' Week' + 'Day one two three four five six'.charAt(new Date().getDay());
                         setInterval(
-                                "document.getElementById('time').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",
+                                "document.getElementById('time').innerHTML=new Date().toLocaleString()+' week'+'Day one two three four five six'.charAt(new Date().getDay());",
                                 1000);
                     </script>
                 </div>
@@ -105,15 +105,15 @@
                             <font color="red"><%=session.getAttribute("userid")%>,</font>
                         </td>
                         <td>
-                            &nbsp;&nbsp;今日
+                            &nbsp;&nbsp;today
                             <%
                                 if (ischeck == 0) {
                             %>
-                            <font color="red">尚未签到！</font>
+                            <font color="red">Not checked in！</font>
                                 <%
                                 } else if (ischeck == 1) {
                                 %>
-                            <font color="red">已经签到！</font>
+                            <font color="red">Checked in！</font>
                                 <%
                                     }
                                 %>
@@ -122,22 +122,22 @@
                           onsubmit="return checkCome();">
                         <td>
                             &nbsp;&nbsp;
-                            <input type="submit" value="&nbsp;签到&nbsp;">
+                            <input type="submit" value="&nbsp;Sign in&nbsp;">
                         </td>
                     </form>
                     </tr>
 
                     <tr>
                         <td>
-                            &nbsp;&nbsp;今日
+                            &nbsp;&nbsp;today
                             <%
                                 if (isleave == 0) {
                             %>
-                            <font color="red">尚未签离！</font>
+                            <font color="red">Not checked out！</font>
                                 <%
                                 } else if (isleave == 1) {
                                 %>
-                            <font color="red">已经签离！</font>
+                            <font color="red">Checked out！</font>
                                 <%
                                     }
                                 %>
@@ -149,7 +149,7 @@
                           onsubmit="return checkLeave();">
                         <td>
                             &nbsp;&nbsp;
-                            <input type="submit" value="&nbsp;签离&nbsp;">
+                            <input type="submit" value="&nbsp;Sign out &nbsp;">
                         </td>
                     </form>
                     </tr>

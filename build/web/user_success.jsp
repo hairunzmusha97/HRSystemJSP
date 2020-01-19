@@ -4,42 +4,42 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>人力资源管理系统-增加用户</title>
+        <title>Human resource management system-Increase user</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript">
             function isValid(form) {
                 var userid = form.userid.value;
                 var name = form.name.value;
                 if (userid == "") {
-                    alert("用户帐号不能为空！");
+                    alert("User account cannot be empty！");
                     return false;
                 }
                 if (name == "") {
-                    alert("员工姓名不能为空！");
+                    alert("Employee name cannot be empty！");
                     return false;
                 }
                 return true;
             }
 
-            var XMLHttpReq = false;//设一个变量
+            var XMLHttpReq = false;//Set a variable
 
             function checkUsername() {
                 var username = document.getElementById("username").value;
                 if (username == "") {
-                    alert("请输入用户名！");
+                    alert("Please enter user name！");
                 } else {
                     send('ajax.do?username=' + username);
                 }
             }
             function send(url) {
-                //发送请求函数
+                //Send request function
                 createXMLHttpRequest();
                 XMLHttpReq.open("GET", url, true);
-                XMLHttpReq.onreadystatechange = parse; //指定响应的函数
-                XMLHttpReq.send(null); //发送请求
+                XMLHttpReq.onreadystatechange = parse; //Specifying the response function
+                XMLHttpReq.send(null); //send request
             }
 
-            //创建一个XMLHttpRequest对象
+            //Create an XMLHttpRequest object
 
             function createXMLHttpRequest() {
                 if (window.XMLHttpRequest) {
@@ -62,13 +62,13 @@
                     if (XMLHttpReq.status == 200) {
                         var res = XMLHttpReq.responseXML.getElementsByTagName("content")[0].firstChild.data;
                         if (res == "ok") {
-                            document.getElementById("status").innerHTML = "该用户名可以使用!";
+                            document.getElementById("status").innerHTML = "The username can be used!";
                         } else {
                             document.getElementById("status").innerHTML = res;
                             window.alert(res);
                         }
                     } else {
-                        window.alert("所请求的页面有异常！");
+                        window.alert("The requested page has an exception！");
                     }
                 }
             }
@@ -91,34 +91,34 @@
 
             <td class="main">
                 <p class="header">
-                    当前位置：增加用户
+                    Current position：increase user
                 </p>
                 <center>
                     <fieldset class="field">
                         <legend>
-                            新增用户：
+                            New users：
                         </legend>
                         <form name="form1" action="user.do?act=addinfo" method="post"
                               onsubmit="return isValid(this);">
                             <p>
-                                用户帐号：
+                                User account：
                                 <input type="text" name="userid" size="20">
                             </p>
                             <p>
-                                员工姓名：
+                                Name：
                                 <input type="text" name="name" size="20">
                             </p>
                             <p>
-                                权限：
+                                Authority：
                                 <input type="radio" name="type" value="0" checked="true">
-                                管理员
+                                Administrator
                                 <input type="radio" name="type" value="1">
-                                经理
+                                Manager
                                 <input type="radio" name="type" value="2">
-                                员工
+                                Employee
                             </p>
                             <p>
-                                <input type="submit" value="填写用户详细信息">
+                                <input type="submit" value="Fill in user details">
                             </p>
                         </form>
                     </fieldset>

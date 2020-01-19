@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>人力资源管理系统-修改密码</title>
+        <title>Human resource management system-Change Password</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript">
             function isValid(form) {
@@ -12,19 +12,19 @@
                 var newpwd = form.newpwd.value;
                 var newpwd2 = form.newpwd2.value;
                 if (prepwd == "") {
-                    alert("原密码不能为空！");
+                    alert("The original password cannot be empty！");
                     return false;
                 }
                 if (newpwd == "") {
-                    alert("新密码不能为空！");
+                    alert("New password cannot be empty！");
                     return false;
                 }
                 if (newpwd2 == "") {
-                    alert("确认密码不能为空！");
+                    alert("Confirm password can not be blank！");
                     return false;
                 }
                 if (newpwd != newpwd2) {
-                    alert("两次输入的密码不一致！");
+                    alert("Passwords entered twice are inconsistent！");
                     return false;
                 }
                 return true;
@@ -48,30 +48,30 @@
 
             <td class="main">
                 <p class="header">
-                    当前位置：修改密码
+                    Current position：Change Password码
                 </p>
                 <center>
                     <fieldset class="field">
                         <legend>
-                            修改密码：
+                            Change Password：
                         </legend>
                         <form name="form1" action="user.do?act=update" method="post"
                               onsubmit="return isValid(this);">
                             <p>
-                                现在的密码：
+                                Current password：
                                 <input type="password" name="prepwd" size="20">
                             </p>
                             <p>
-                                设置新的密码：
+                                Set new password：
                                 <input type="password" name="newpwd" size="20">
                             </p>
                             <p>
-                                确认新的密码：
+                                Confirm new password：
                                 <input type="password" name="newpwd2" size="20">
                             </p>
                             <p>
-                                <input type="submit" value="确&nbsp&nbsp认">
-                                <input type="reset" value="重&nbsp&nbsp置">
+                                <input type="submit" value="Indeed &nbsp&nbsp Recognize">
+                                <input type="reset" value="Weight &nbsp&nbsp Set">
                             </p>
                         </form>
                     </fieldset>
@@ -80,9 +80,9 @@
                     String act = request.getParameter("act");
                     if (act == null) {
                     } else if (act.equals("fail")) {
-                        out.print("<p>原密码错误，密码修改失败!</p>");
+                        out.print("<p>The original password is wrong，Password change failed!</p>");
                     } else if (act.equals("success")) {
-                        out.print("<p>密码修改成功!</p>");
+                        out.print("<p>Password reset complete!</p>");
                     }
                 %>
             </td>

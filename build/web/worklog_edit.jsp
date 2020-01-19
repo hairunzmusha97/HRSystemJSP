@@ -9,11 +9,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
-        <title>企业信息管理系统-修改工作记录</title>
+        <title>Enterprise Information Management System-Modify work records</title>
         <meta name="pragma" content="no-cache">
         <meta name="cache-control" content="no-cache">
-        <meta name="keywords" content="企业信息管理">
-        <meta name="description" content="企业信息管理系统-修改工作记录">
+        <meta name="keywords" content="Enterprise Information Management">
+        <meta name="description" content="Enterprise Information Management System-Modify work records">
         <meta name="Content-Type" content="text/html;charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <base href="<%=basePath%>">
@@ -25,19 +25,19 @@
                 var day = form.day.value;
                 var title = form.title.value;
                 if (year == "") {
-                    alert("年份不能为空！");
+                    alert("Year cannot be empty！");
                     return false;
                 }
                 if (month == "") {
-                    alert("月份不能为空！");
+                    alert("Month cannot be empty！");
                     return false;
                 }
                 if (day == "") {
-                    alert("日期不能为空！");
+                    alert("Date cannot be empty！");
                     return false;
                 }
                 if (title == "") {
-                    alert("主题不能为空！");
+                    alert("Subject cannot be empty！");
                     return false;
                 }
                 return true;
@@ -59,12 +59,12 @@
                     <TABLE width=100% bgcolor="#66FF66" class="position">
                         <TR>
                             <TD>
-                                当前位置：工作记录&gt;&gt;修改工作记录
+                                Current position：Work record &gt;&gt; Modify work records
                             </TD>
                             <TD align="right">
                                 <A
                                     HREF="worklog.do?method=list&pageSize=${requestScope.pageSize}
-                                    &pageNo=${requestScope.pageNo}">返回工作记录页面</A>
+                                    &pageNo=${requestScope.pageNo}">Back to work history page</A>
                             </TD>
                         </TR>
                         <TR>
@@ -77,7 +77,7 @@
                             <TABLE width="100%" bgcolor="#66FF66" height="95%">
                                 <TR valign="top">
                                     <TD>
-                                        年份
+                                        Years
                                     </TD>
                                     <TD>
                                         <INPUT TYPE="text" NAME="year"
@@ -86,7 +86,7 @@
                                 </TR>
                                 <TR valign="top">
                                     <TD>
-                                        月份
+                                        Month
                                     </TD>
                                     <TD>
                                         <INPUT TYPE="text" NAME="month"
@@ -95,7 +95,7 @@
                                 </TR>
                                 <TR valign="top">
                                     <TD>
-                                        日期
+                                        Date
                                     </TD>
                                     <TD>
                                         <INPUT TYPE="text" NAME="day"
@@ -104,7 +104,7 @@
                                 </TR>
                                 <TR valign="top">
                                     <TD>
-                                        记录标题
+                                        Record title
                                     </TD>
                                     <TD>
                                         <INPUT TYPE="text" NAME="title"
@@ -113,7 +113,7 @@
                                 </TR>
                                 <TR valign="top">
                                     <TD>
-                                        记录内容
+                                        Record content
                                     </TD>
                                     <TD>
                                         <TEXTAREA NAME="description" ROWS="15" COLS="60">${requestScope.description}</TEXTAREA>
@@ -121,7 +121,7 @@
 									</TR>
 									<TR valign="top">
 										<TD colspan=1 align="center" height="30%">
-											<INPUT TYPE="submit" value="提交">
+											<INPUT TYPE="submit" value="submit">
 										</TD>
 									</TR>
 								</TABLE>

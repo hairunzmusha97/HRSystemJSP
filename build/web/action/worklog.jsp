@@ -5,13 +5,13 @@
     String method = request.getParameter("method");
     String toPage = "../worklog.jsp";
 
-    //未登录时跳转到登录页面
+    //Jump to login page when not logged in
     if (session.getAttribute("username") == null) {
         toPage = "../login.jsp";
     } else {
-        String username = (String) session.getAttribute("username");//当前登录用户名
+        String username = (String) session.getAttribute("username");//Current login username
 
-        //取得分页参数
+        //Get paging parameters
         String pageSize = request.getParameter("pageSize");
         String pageNo = request.getParameter("pageNo");
 
@@ -21,34 +21,34 @@
         if (pageNo == null) {
             pageNo = "1";
         }
-        //保存分页参数，传递给下一个页面
+        //Save pagination parameters，Pass to next page
         request.setAttribute("pageSize", pageSize);
         request.setAttribute("pageNo", pageNo);
 
         WorklogBean worklogBean = new WorklogBean();
-        //根据method参数执行各种操作
-        if (method.equals("list")) {//列表操作
+        //Perform various operations based on method parameters
+        if (method.equals("list")) {//List operations
             worklogBean.list(request, username, pageSize, pageNo);
             toPage = "../worklog.jsp";
         }
-        if (method.equals("delete")) {//删除操作
+        if (method.equals("delete")) {//Delete operation
             worklogBean.delete(request, username);
             worklogBean.list(request, username, pageSize, pageNo);
             toPage = "../worklog.jsp";
         }
-        if (method.equals("add")) {//新增操作
+        if (method.equals("add")) {//New operation
             toPage = "../worklog_add.jsp";
         }
-        if (method.equals("insert")) {//插入操作
+        if (method.equals("insert")) {//Insert operation
             worklogBean.insert(request, username);
             worklogBean.list(request, username, pageSize, pageNo);
             toPage = "../worklog.jsp";
         }
-        if (method.equals("edit")) {//编辑操作
+        if (method.equals("edit")) {//Edit operation
             worklogBean.select(request, username);
             toPage = "../worklog_edit.jsp";
         }
-        if (method.equals("update")) {//更新操作
+        if (method.equals("update")) {//Update operation
             worklogBean.update(request, username);
             worklogBean.list(request, username, pageSize, pageNo);
             toPage = "../worklog.jsp";

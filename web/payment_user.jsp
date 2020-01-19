@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>人力资源管理系统-查看用户</title>
+        <title>Human resource management system-View users</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <style type="text/css">
@@ -27,44 +27,44 @@
                 <table class="header">
                     <tr>
                         <td>
-                            当前位置：薪资管理&gt;&gt;个人工资
+                            Current position：Payroll management &gt;&gt; Personal salary
                         </td>
                     </tr>
                 </table>
                 <CENTER>
                     <div>
-                        <strong><font color="#990000">用户个人薪资信息</font> </strong>
+                        <strong><font color="#990000">User personal salary information </font> </strong>
                     </div>
                     <TABLE table width="80%" border="1" cellpadding="0" cellspacing="0"
                            bgcolor="#EAE2F3" bordercolorlight="#A545A3"
                            bordercolordark="#FFFFFF">
                         <TR class="tableheader">
                             <td>
-                                编号
+                                Numbering
                             </td>
                             <TD>
-                                员工姓名
+                                Name
                             </TD>
                             <TD>
-                                月份
+                                Month
                             </TD>
                             <TD>
-                                基本工资
+                                Basic wage
                             </TD>
                             <td>
-                                额外工资
+                                Extra pay
                             </td>
                             <td>
-                                奖金
+                                Bonus
                             </td>
                             <td>
-                                罚金
+                                Fine
                             </td>
                             <td>
-                                总工资
+                                Gross Salary
                             </td>
                             <td>
-                                操作
+                                Operating
                             </td>
                         </TR>
                         <c:forEach items="${requestScope.list}" var="hash">
@@ -94,7 +94,7 @@
                                     ${hash.basic_salary}
                                 </td>
                                 <td>
-                                    <a href="user.do?act=edit&userid=${hash.userid}">修改额外薪金</a>&nbsp&nbsp
+                                    <a href="user.do?act=edit&userid=${hash.userid}">Modify extra salary</a>&nbsp&nbsp
                                 </TD>
                             </TR>
                         </c:forEach>

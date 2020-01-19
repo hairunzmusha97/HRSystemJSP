@@ -11,7 +11,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
-        <title>人力资源管理系统-培训管理</title>
+        <title>Human Resource Management System-Training Management</title>
         <meta name="pragma" content="no-cache">
         <meta name="cache-control" content="no-cache">
 
@@ -30,7 +30,7 @@
                 <table class="header">
                     <tr>
                         <td>
-                            当前位置：个人管理&gt;&gt;考勤管理
+                            current position：Personal Management&gt;&gt;Attendance Management
                         </td>
                     </tr>
                 </table>
@@ -43,7 +43,7 @@
 
                 <CENTER>
                     <div>
-                        <strong><font color="#990000">考勤信息</font> </strong>
+                        <strong><font color="#990000">Attendance information</font> </strong>
                     </div>
                     <%
                         int count = 0;
@@ -53,22 +53,22 @@
                            bordercolordark="#FFFFFF">
                         <TR class="tableheader">
                             <td>
-                                编号
+                                Numbering
                             </td>
                             <TD>
-                                姓名
+                                Name
                             </TD>
                             <TD>
-                                时间
+                                time
                             </TD>
                             <td>
-                                签到
+                                Sign in
                             </td>
                             <td>
-                                签离
+                                Sign Out
                             </td>
                             <td>
-                                出勤情况
+                                Attendance
                             </td>
                         </TR>
 
@@ -88,7 +88,7 @@
                                     ${hash.isleave}
                                 </TD>
                                 <TD>
-                                    正常出勤
+                                    Normal attendance
                                 </TD>
                             </TR>
                         </c:forEach>

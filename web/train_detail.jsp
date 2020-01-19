@@ -13,7 +13,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
-        <title>人力资源管理系统-培训信息</title>
+        <title>Human resource management-Training Information</title>
         <meta name="pragma" content="no-cache">
         <meta name="cache-control" content="no-cache">
         <meta name="Content-Type" content="text/html;charset=UTF-8">
@@ -22,7 +22,7 @@
 
         <script type="text/javascript">
             function success() {
-                alert("报名成功！");
+                alert("Successful Registration！");
             }
         </script>
 
@@ -38,10 +38,10 @@
                 <table class="header">
                     <tr>
                         <td>
-                            当前位置：企业管理&gt;&gt;培训详细信息
+                            Current Position：Business Management &gt;&gt; Training details
                         </td>
                         <td align="right">
-                            <A HREF="train.do?method=list">返回培训信息界面</A>
+                            <A HREF="train.do?method=list">Back to training information interface</A>
                         </td>
                     </tr>
                 </table>
@@ -57,7 +57,7 @@
                                 <tr>
                                     <td bgcolor="#E7DCF1">
                                         <div align="center">
-                                            <strong><font color="#990000">培训详细信息</font> </strong>
+                                            <strong><font color="#990000">Training details</font> </strong>
                                         </div>
                                     </td>
                                 </tr>
@@ -68,7 +68,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>培训标题</strong>
+                                            <strong>Training title</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -78,7 +78,7 @@
                                     </td>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>培训部门</strong>
+                                            <strong>Training department</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -90,7 +90,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>开始时间</strong>
+                                            <strong>Starting time</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -100,7 +100,7 @@
                                     </td>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>结束时间</strong>
+                                            <strong>End Time</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -113,7 +113,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>培训讲师</strong>
+                                            <strong>Trainer</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -123,7 +123,7 @@
                                     </td>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>培训人数</strong>
+                                            <strong>Training number</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -136,7 +136,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>培训已报人数</strong>
+                                            <strong>Training reported</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -147,7 +147,7 @@
 
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>培训尚余名额</strong>
+                                            <strong>Training left</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -167,7 +167,7 @@
                                 <tr height="50%">
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>培训内容</strong>
+                                            <strong>Training content</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3" colspan="3">
@@ -180,7 +180,7 @@
                             </table>
 
                             <p align="center">
-                                <input type="submit" value="报名参加培训" onclick="success()">
+                                <input type="submit" value="Sign up for training" onclick="success()">
                             </p>
 
                         </td>

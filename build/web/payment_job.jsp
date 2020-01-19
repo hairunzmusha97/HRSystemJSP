@@ -10,7 +10,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
-        <title>人力资源管理系统-薪资设定</title>
+        <title>Human resource management system-Salary setting</title>
         <meta name="pragma" content="no-cache">
         <meta name="cache-control" content="no-cache">
         <meta name="Content-Type" content="text/html;charset=UTF-8">
@@ -29,10 +29,10 @@
                 <table class="header">
                     <tr>
                         <td>
-                            当前位置：薪资管理&gt;&gt;薪资设定
+                            Current position：Payroll management &gt;&gt; Salary setting
                         </td>
                         <td align="right">
-                            <a href="payment.do?act=edit">编辑薪资</a>
+                            <a href="payment.do?act=edit">Edit salary</a>
                         </td>
                     </tr>
                 </table>
@@ -47,20 +47,20 @@
                         <tr>
                             <td width="400px">
                                 <div align="center">
-                                    <strong><font color="#990000">基本工资设定</font> </strong>
+                                    <strong><font color="#990000">Basic salary setting</font> </strong>
                                 </div>
                                 <TABLE table width="100%" border="1" cellpadding="0"
                                        cellspacing="0" bgcolor="#EAE2F3" bordercolorlight="#A545A3"
                                        bordercolordark="#FFFFFF">
                                     <TR class="tableheader">
                                         <TD>
-                                            部门名称
+                                            Department name
                                         </TD>
                                         <TD>
-                                            职称
+                                            Job title
                                         </TD>
                                         <TD>
-                                            工资
+                                            wage
                                         </TD>
                                     </TR>
                                     <c:forEach items="${requestScope.list}" var="hash">
@@ -81,22 +81,22 @@
                             <td width="100px"></td>
                             <td width="300px">
                                 <div align="center">
-                                    <strong><font color="#990000">额外薪资设定</font> </strong>
+                                    <strong><font color="#990000">Additional salary settings</font> </strong>
                                 </div>
                                 <TABLE table width="100%" border="1" cellpadding="0"
                                        cellspacing="0" bgcolor="#EAE2F3" bordercolorlight="#A545A3"
                                        bordercolordark="#FFFFFF">
                                     <TR class="tableheader">
                                         <TD>
-                                            项目
+                                            Project
                                         </TD>
                                         <TD>
-                                            薪资
+                                            Salary
                                         </TD>
                                     </TR>
                                     <TR>
                                         <TD>
-                                            住房补助
+                                            Housing assistance
                                         </TD>
                                         <TD>
                                             300
@@ -105,7 +105,7 @@
 
                                     <TR>
                                         <TD>
-                                            三餐补助
+                                            Meals
                                         </TD>
                                         <TD>
                                             300
@@ -114,7 +114,7 @@
 
                                     <TR>
                                         <TD>
-                                            全勤补助
+                                            Full Attendance
                                         </TD>
                                         <TD>
                                             500
@@ -123,7 +123,7 @@
 
                                     <TR>
                                         <TD>
-                                            加班补助
+                                            Overtime allowance
                                         </TD>
                                         <TD>
                                             100
@@ -132,7 +132,7 @@
 
                                     <TR>
                                         <TD>
-                                            迟到早退
+                                            Late and leave early
                                         </TD>
                                         <TD>
                                             -20
@@ -141,7 +141,7 @@
 
                                     <TR>
                                         <TD>
-                                            无故缺勤
+                                            Unexcused absence
                                         </TD>
                                         <TD>
                                             -100

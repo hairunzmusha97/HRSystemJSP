@@ -11,7 +11,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
-        <title>人力资源管理系统-个人信息</title>
+        <title>Human resource management system-Personal information</title>
         <meta name="pragma" content="no-cache">
         <meta name="cache-control" content="no-cache">
         <meta name="Content-Type" content="text/html;charset=UTF-8">
@@ -27,7 +27,7 @@
 
             <td class="main">
                 <p class="header">
-                    当前位置：个人信息
+                    current position：Personal information
                 </p>
                 <p>
                     &nbsp
@@ -44,7 +44,7 @@
                                 <tr>
                                     <td bgcolor="#E7DCF1">
                                         <div align="center">
-                                            <strong><font color="#990000">员工个人信息</font> </strong>
+                                            <strong><font color="#990000">Personal information of employees</font> </strong>
                                         </div>
                                     </td>
                                 </tr>
@@ -55,7 +55,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>姓名</strong>
+                                            <strong>Name</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -65,7 +65,7 @@
                                     </td>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>性别</strong>
+                                            <strong>Gender</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -77,7 +77,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>生日</strong>
+                                            <strong>Birthday</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -87,7 +87,7 @@
                                     </td>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>年龄</strong>
+                                            <strong>Age</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -100,7 +100,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>籍贯</strong>
+                                            <strong>Hometown</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -110,7 +110,7 @@
                                     </td>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>政治面貌</strong>
+                                            <strong>Political status</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -123,7 +123,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>移动电话</strong>
+                                            <strong>Mobile phone</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -133,7 +133,7 @@
                                     </td>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>固定电话</strong>
+                                            <strong>Fixed telephone</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -146,7 +146,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>文化水平</strong>
+                                            <strong>Cultural level</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -156,7 +156,7 @@
                                     </td>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>专业</strong>
+                                            <strong>Profession</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -169,7 +169,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>身份证号</strong>
+                                            <strong>ID</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -192,7 +192,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>地址</strong>
+                                            <strong>Address</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -202,7 +202,7 @@
                                     </td>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>婚姻</strong>
+                                            <strong>Marriage</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -215,7 +215,7 @@
                                 <tr>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>所属部门</strong>
+                                            <strong>Department</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">
@@ -225,7 +225,7 @@
                                     </td>
                                     <td bgcolor="#E2D8EF">
                                         <p align="center">
-                                            <strong>所属职位</strong>
+                                            <strong>Position</strong>
                                         </p>
                                     </td>
                                     <td bgcolor="#EAE2F3">

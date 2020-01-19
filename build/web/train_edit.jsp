@@ -9,7 +9,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
-        <title>人力资源管理系统-修改培训信息</title>
+        <title>Human resource management-Modify training information</title>
         <meta name="pragma" content="no-cache">
         <meta name="cache-control" content="no-cache">
         <meta name="Content-Type" content="text/html;charset=UTF-8">
@@ -20,17 +20,17 @@
             .input {
                 height: 100%;
                 width: 100%;
-                font-family: 微软雅黑;
+                font-family: Times New Roman;
                 font-size: 12pt;
-                font-family: 微软雅黑;
+                font-family: Times New Roman;
             }
 
             .content {
                 height: 100px;
                 width: 600px;
-                font-family: 微软雅黑;
+                font-family: Times New Roman;
                 font-size: 12pt;
-                font-family: 微软雅黑;
+                font-family: Times New Roman;
             }
 
             .td {
@@ -58,10 +58,10 @@
                 <table class="header">
                     <tr>
                         <td>
-                            当前位置：企业管理&gt;&gt;编辑培训信息
+                            Current position：Business management &gt;&gt; Edit training information
                         </td>
                         <td align="right">
-                            <A HREF="train.do?method=list">返回培训信息界面</A>
+                            <A HREF="train.do?method=list">Back to training information interface</A>
                         </td>
                     </tr>
                 </table>
@@ -81,7 +81,7 @@
                                     <tr>
                                         <td bgcolor="#E7DCF1">
                                             <div align="center">
-                                                <strong><font color="#990000">新增培训信息</font> </strong>
+                                                <strong><font color="#990000">New training information</font> </strong>
                                             </div>
                                         </td>
                                     </tr>
@@ -92,7 +92,7 @@
                                     <tr>
                                         <td bgcolor="#E2D8EF" class="td">
                                             <p align="center">
-                                                <strong>培训标题</strong>
+                                                <strong>Training title</strong>
                                             </p>
                                         </td>
                                         <td bgcolor="#EAE2F3" class="td2">
@@ -103,7 +103,7 @@
                                         </td>
                                         <td bgcolor="#E2D8EF" class="td">
                                             <p align="center">
-                                                <strong>培训部门</strong>
+                                                <strong>Training department</strong>
                                             </p>
                                         </td>
                                         <td bgcolor="#EAE2F3" class="td2">
@@ -116,7 +116,7 @@
                                     <tr>
                                         <td bgcolor="#E2D8EF" class="td">
                                             <p align="center">
-                                                <strong>开始时间</strong>
+                                                <strong>Starting time</strong>
                                             </p>
                                         </td>
                                         <td bgcolor="#EAE2F3" class="td2">
@@ -127,7 +127,7 @@
                                         </td>
                                         <td bgcolor="#E2D8EF" class="td">
                                             <p align="center">
-                                                <strong>结束时间</strong>
+                                                <strong>End Time</strong>
                                             </p>
                                         </td>
                                         <td bgcolor="#EAE2F3" class="td2">
@@ -141,7 +141,7 @@
                                     <tr>
                                         <td bgcolor="#E2D8EF" class="td">
                                             <p align="center">
-                                                <strong>培训讲师</strong>
+                                                <strong>Trainer</strong>
                                             </p>
                                         </td>
                                         <td bgcolor="#EAE2F3" class="td2">
@@ -152,7 +152,7 @@
                                         </td>
                                         <td bgcolor="#E2D8EF" class="td">
                                             <p align="center">
-                                                <strong>培训人数</strong>
+                                                <strong>Training number</strong>
                                             </p>
                                         </td>
                                         <td bgcolor="#EAE2F3" class="td2">
@@ -166,7 +166,7 @@
                                     <tr height="50%">
                                         <td bgcolor="#E2D8EF" class="td">
                                             <p align="center">
-                                                <strong>培训内容</strong>
+                                                <strong>Training content</strong>
                                             </p>
                                         </td>
                                         <td bgcolor="#EAE2F3" class="td2" colspan="3">
@@ -181,8 +181,8 @@
                         </tr>
                     </table>
                     <p align="center">
-                        <input type="submit" value="确&nbsp&nbsp认">
-                        <input type="reset" value="重&nbsp&nbsp置">
+                        <input type="submit" value="Indeed &nbsp&nbsp Recognize">
+                        <input type="reset" value="Weight &nbsp&nbsp Set">
                     </p>
                 </FORM>
             </td>

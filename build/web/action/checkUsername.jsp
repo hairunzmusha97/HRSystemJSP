@@ -9,7 +9,7 @@
     boolean isExist = userBean.isExist(username);
 
     if (isExist) {
-        out.println("<content>该用户名已经存在!</content>");
+        out.println("<content>This user name already exists!</content>");
     } else {
         out.println("<content>ok</content>");
     }

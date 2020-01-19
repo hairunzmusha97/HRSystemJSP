@@ -5,13 +5,13 @@
     String method = request.getParameter("method");
     String toPage = "../meeting.jsp";
 
-    //未登录时跳转到登录页面
+    //Jump to login page when not logged in
     if (session.getAttribute("username") == null) {
         toPage = "../login.jsp";
     } else {
-        String username = (String) session.getAttribute("username");//当前登录用户名
+        String username = (String) session.getAttribute("username");//Current login username
 
-        //取得分页参数
+        //Get paging parameters
         String pageSize = request.getParameter("pageSize");
         String pageNo = request.getParameter("pageNo");
 
@@ -21,34 +21,34 @@
         if (pageNo == null) {
             pageNo = "1";
         }
-        //保存分页参数，传递给下一个页面
+        //Save pagination parameters，Pass to next page
         request.setAttribute("pageSize", pageSize);
         request.setAttribute("pageNo", pageNo);
 
         MeetingBean meetingBean = new MeetingBean();
-        //根据method参数执行各种操作
-        if (method.equals("list")) {//列表操作
+        //Perform various operations based on method parameters
+        if (method.equals("list")) {//List operations
             meetingBean.list(request, username, pageSize, pageNo);
             toPage = "../meeting.jsp";
         }
-        if (method.equals("delete")) {//删除操作
+        if (method.equals("delete")) {//Delete operation
             meetingBean.delete(request, username);
             meetingBean.list(request, username, pageSize, pageNo);
             toPage = "../meeting.jsp";
         }
-        if (method.equals("add")) {//新增操作
+        if (method.equals("add")) {//New operation
             toPage = "../meeting_add.jsp";
         }
-        if (method.equals("insert")) {//插入操作
+        if (method.equals("insert")) {//Insert operation
             meetingBean.insert(request, username);
             meetingBean.list(request, username, pageSize, pageNo);
             toPage = "../meeting.jsp";
         }
-        if (method.equals("edit")) {//编辑操作
+        if (method.equals("edit")) {//Edit operation
             meetingBean.select(request, username);
             toPage = "../meeting_edit.jsp";
         }
-        if (method.equals("update")) {//更新操作
+        if (method.equals("update")) {//Update operation
             meetingBean.update(request, username);
             meetingBean.list(request, username, pageSize, pageNo);
             toPage = "../meeting.jsp";

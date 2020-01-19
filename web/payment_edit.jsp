@@ -10,7 +10,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
-        <title>人力资源管理系统-薪资设定</title>
+        <title>Human resource management system-Salary setting</title>
         <meta name="pragma" content="no-cache">
         <meta name="cache-control" content="no-cache">
         <meta name="Content-Type" content="text/html;charset=UTF-8">
@@ -21,7 +21,7 @@
             .input {
                 height: 100%;
                 width: 100%;
-                font-family: 微软雅黑;
+                font-family: Times New Roman;
                 font-size: 12pt;
             }
         </style>
@@ -37,10 +37,10 @@
                 <table class="header">
                     <tr>
                         <td>
-                            当前位置：薪资管理&gt;&gt;薪资设定
+                            Current position：Payroll management &gt;&gt; Salary setting
                         </td>
                         <td align="right">
-                            <a href="payment.do?act=jobsalary">返回上一页</a>
+                            <a href="payment.do?act=jobsalary">Go back to the last page</a>
                         </td>
                     </tr>
                 </table>
@@ -56,20 +56,20 @@
                             <tr>
                                 <td width="400px">
                                     <div align="center">
-                                        <strong><font color="#990000">基本工资设定</font> </strong>
+                                        <strong><font color="#990000">Basic salary setting</font> </strong>
                                     </div>
                                     <TABLE table width="100%" border="1" cellpadding="0"
                                            cellspacing="0" bgcolor="#EAE2F3" bordercolorlight="#A545A3"
                                            bordercolordark="#FFFFFF">
                                         <TR class="tableheader">
                                             <TD>
-                                                部门名称
+                                                Department name
                                             </TD>
                                             <TD>
-                                                职称
+                                                Job title
                                             </TD>
                                             <TD>
-                                                工资
+                                                Wage
                                             </TD>
                                         </TR>
                                         <c:forEach items="${requestScope.list}" var="hash">
@@ -92,22 +92,22 @@
                                 <td width="100px"></td>
                                 <td width="300px">
                                     <div align="center">
-                                        <strong><font color="#990000">额外薪资设定</font> </strong>
+                                        <strong><font color="#990000">Additional salary settings</font> </strong>
                                     </div>
                                     <TABLE table width="100%" border="1" cellpadding="0"
                                            cellspacing="0" bgcolor="#EAE2F3" bordercolorlight="#A545A3"
                                            bordercolordark="#FFFFFF">
                                         <TR class="tableheader">
                                             <TD>
-                                                项目
+                                                Project
                                             </TD>
                                             <TD>
-                                                薪资
+                                                Salary
                                             </TD>
                                         </TR>
                                         <TR>
                                             <TD>
-                                                住房补助
+                                                Housing assistance
                                             </TD>
                                             <TD>
                                                 <input type="text" name="name" class="input" value="300"}>
@@ -116,7 +116,7 @@
 
                                         <TR>
                                             <TD>
-                                                三餐补助
+                                                Meals
                                             </TD>
                                             <TD>
                                                 <input type="text" name="name" class="input" value="300"}>
@@ -125,7 +125,7 @@
 
                                         <TR>
                                             <TD>
-                                                全勤补助
+                                                Full Attendance
                                             </TD>
                                             <TD>
                                                 <input type="text" name="name" class="input" value="500"}>
@@ -133,7 +133,7 @@
                                         </TR>
                                         <TR>
                                             <TD>
-                                                加班补助
+                                                Overtime allowance
                                             </TD>
                                             <TD>
                                                 <input type="text" name="name" class="input" value="100"}>
@@ -141,7 +141,7 @@
                                         </TR>
                                         <TR>
                                             <TD>
-                                                迟到早退
+                                                Late and leave early
                                             </TD>
                                             <TD>
                                                 <input type="text" name="name" class="input" value="-20"}>
@@ -150,7 +150,7 @@
 
                                         <TR>
                                             <TD>
-                                                无故缺勤
+                                                Unexcused absence
                                             </TD>
                                             <TD>
                                                 <input type="text" name="name" class="input" value="-100"}>
@@ -162,8 +162,8 @@
                             </tr>
                         </table>
                         <p align="center">
-                            <input type="submit" value="确&nbsp&nbsp认">
-                            <input type="reset" value="重&nbsp&nbsp置">
+                            <input type="submit" value="Indeed &nbsp&nbsp Rcognize">
+                            <input type="reset" value="Weight &nbsp&nbsp Set">
                         </p>
                     </form>
                 </CENTER>
